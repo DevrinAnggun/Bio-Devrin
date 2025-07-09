@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Biodataku</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #ffffff;
+      padding: 15px 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    nav ul li a.active {
+      color: #7D3FB3;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color: #B9A5DC;
+      padding: 60px 20px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      color: white;
+    }
+
+    .hero-text h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button-group a button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #812F8F;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero-image {
+      flex: 1;
+      min-width: 280px;
+      max-width: 400px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#" class="active">Beranda</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Experience</a></li>
+      <li><a href="#">FAQ Me</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Selamat Datang di Website Biodataku!</h1>
+      <p>Yuk, lebih dekat dengan aku! Di sini kamu bisa kenal siapa aku, apa yang aku suka, dan perjalanan hidupku sejauh ini.</p>
+      <div class="button-group">
+        <a href="biodata-page.html"><button>Lihat Biodata</button></a>
+        <a href="perjalanan.html"><button>Perjalanan Hidupku</button></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/foto.jpg" alt="Foto Profil"/>
+    </div>
+  </section>
+
+</body>
+</html>
